@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 85vh;
+    background: linear-gradient(to right, #5f2c82, #49a09d);
+}
+.wrapper {
+    width: 50%;
+    background-color: white;
+    padding: 3%;
+    border-radius: .6rem;
+    box-shadow: 5px 5px 15px 20px rgba(0, 0, 0, .09);
+}
+header h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #888;
+    margin-bottom: 20px;
+}
+.content {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, .4);
+}
+.content .quote-area {
+    display: flex;
+    justify-content: center;
+}
+.quote-area .quote {
+    font-size: 22px;
+    color: #666;
+}
+.content .quote::selection {
+    background-color: transparent;
+}
+.content .quote-area i {
+    font-size: 25px;
+    color: #444;
+}
+.content .quote-area i:first-child {
+    margin: 3px 10px 0 0;
+}
+.content .quote-area i:last-child {
+    margin: 0 0 3px 10px;
+    display: flex;
+    align-items: flex-end;
+}
+.content .auther {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 20px;
+    color: #999;
+}
+.content .auther span:first-child {
+    font-family: monospace;
+    margin-top: -10px;
+    margin-right: 10px;
+}
+.content .auther span:last-child {
+    font-style: italic;
+    font-size: 1.2rem;
+}
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.features {
+    width: 40%;
+}
+.buttons .features ul {
+    list-style-type: none;
+    width: 80%;
+    display: flex;
+}
+.buttons .features ul li {
+    border: 1px solid #2727c5cd;
+    padding: 8%;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    color: #2727c5cd;
+    transition: all .4s ease;
+}
+.buttons .features ul li:last-child {
+    margin-left: 10px;
+}
+.buttons .features ul li:hover {
+    background-color: #2727c5cd;
+    color: #fff;
+    cursor: pointer;
+}
+.buttons button {
+    padding: 2%;
+    border: 0;
+    background-color: #2727c5cd;
+    color: white;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.buttons button:hover {
+    background-color: #0000ffdb;
+}
+.buttons button.loading {
+    opacity: 0.7;
+    pointer-events: none;
+    background-color: #7676f2db;
+    cursor: not-allowed;
+}
